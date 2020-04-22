@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img{
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.is-danger{
+  color: red;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.authentication{
+  
+  margin-top: 10rem;
+}
+.login-section{
+  background: #fff;
+  padding: 2rem;
+  border: 1px solid gray;
+  border-radius: 7px;
+}
+.dashboard{
+  display: flex;
+  flex-wrap: wrap;
+}
+.sidebar{
+  background-color:darkgray;
+  width:250px ;
+  height: 700px;
+}
+.extra-sidebar{
+  background-color: darkgray;
+}
+.profile{
+  margin-top: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.company-image{
+  width: 50px;
+  height: 50px;
+}
+.profile-details .profile-name{
+  align-items: center;
+  text-align: center;
+}
+.sidebar-items{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 2.5rem;
+}
+.side-bar-item:first-child{
+  margin-top: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.side-bar-item{
+  cursor: pointer;
+  margin-top: 3rem;
+  text-decoration: none;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar .active{
+  background-color: aqua;
+  border-radius: 5px;
+  padding: 5px;
+}
+.side-bar-item:hover,.sidebar .active:hover{
+  background-color:#000F0F;
+  border-radius: 5px;
+  padding: 5px;
+  transition: 0.5s ease-in-out;
+  color: azure;
+}
+.dashboard-content{
+  flex: 1;
+  padding: 2rem;
+}
+/* events  */
+
+.evnet-add-button{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+
+.conformation-button{
+  margin-top:1.5rem ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-items: center;
+}
+.card-event{
+  width: 18rem;
 }
